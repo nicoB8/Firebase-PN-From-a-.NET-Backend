@@ -23,7 +23,7 @@ namespace SendingPushNotifications.Logics
         /// <returns></returns>
         public static async Task<bool> SendPushNotification(string[] deviceTokens, string title, string body, object data)
         {
-            bool sent = true;
+            bool sent = false;
 
             if (deviceTokens.Count() > 0)
             {
